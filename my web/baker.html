@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shyam Bakers - Sweet Treats Made With Love</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #fff0f6;
+      color: #4a3c4c;
+      line-height: 1.6;
+    }
+    /* Announcement Bar */
+    .announcement {
+      background-color: #ffcee4;
+      color: #a03e5f;
+      text-align: center;
+      padding: 12px 10px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    /* Header */
+    header img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 3px solid #ff82a9;
+    }
+    /* Marquee Replacement */
+    .marquee-container {
+      background-color: #fff4f8;
+      color: #d9427a;
+      font-size: 28px;
+      font-family: 'Brush Script MT', cursive;
+      padding: 15px 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .marquee-text {
+      display: inline-block;
+      white-space: nowrap;
+      position: absolute;
+      animation: marquee 18s linear infinite;
+      font-weight: bold;
+    }
+    @keyframes marquee {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: -100%;
+      }
+    }
+    /* Navigation */
+    nav {
+      background-color: #ff82a9;
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(217, 66, 122, 0.5);
+    }
+    nav button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 18px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav button:hover {
+      color: #ffd1e4;
+      transform: scale(1.1);
+    }
+    /* Main Content */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    main h1 {
+      font-size: 48px;
+      color: #d9427a;
+      margin-bottom: 10px;
+      font-family: 'Pacifico', cursive;
+      text-shadow: 1px 1px 3px #ffa8c4;
+    }
+    main h2 {
+      font-size: 28px;
+      font-style: italic;
+      margin-bottom: 25px;
+      color: #6a506e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    main p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: #5e4a5e;
+      text-align: justify;
+      line-height: 1.8;
+    }
+    /* Gallery Table */
+    table {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      border-collapse: separate;
+      border-spacing: 20px;
+    }
+    td {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 15px rgba(217, 66, 122, 0.2);
+    }
+    td img {
+      width: 100%;
+      display: block;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+    td img:hover {
+      transform: scale(1.1);
+    }
+    /* Footer */
+    footer {
+      background-color: #d9427a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 18px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      main h1 {
+        font-size: 36px;
+      }
+      main h2 {
+        font-size: 22px;
+      }
+      main p {
+        font-size: 16px;
+      }
+      nav button {
+        margin: 0 10px;
+        font-size: 18px;
+      }
+      table {
+        border-spacing: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="announcement">
+    Sweet Deals Coming Soon! Stay Tuned with Shyam Bakers 💖
+  </div>
+<!-- Font Awesome (Add this in <head> if not already included) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Announcement with contact and social icons -->
+<div class="announcement" style="
+  background-color: #fff0f6;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #880e4f;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(217, 66, 122, 0.2);
+  margin-top: 30px;
+">
+
+  
+
+  <!-- Contact Details -->
+  <div style="margin-top: 15px; font-size: 16px; color: #5a2a47;">
+    📞 Phone: +91-77430-15262<br>
+    📧 Email: shyambakers@gmail.com
+  </div>
+
+  <!-- Social Media Icons -->
+  <div style="margin-top: 15px; font-size: 26px; color: #d9427a;">
+    <i class="fab fa-facebook-square" style="margin: 0 12px;"></i>
+    <A HREF=" https://www.instagram.com/shyam_bakery001?igsh=amkycjg3aTNtcTcx"><i class="fab fa-instagram" style="margin: 0 12px;"></i></A>
+    <i class="fab fa-twitter" style="margin: 0 12px;"></i>
+    <i class="fas fa-map-marker-alt" style="margin: 0 12px;"></i>
+  </div>
+
+  <div style="font-size: 14px; color: #a8486f; margin-top: 6px;">
+    Facebook &nbsp; Instagram &nbsp; Twitter &nbsp; Location
+  </div>
+</div>
+
+  <img 
+  src="C:\Users\comp 7\Desktop\SUMIT\logo.jpg" 
+  alt="Shyam Bakers Logo" 
+  style="
+    max-height: 200px;       /* Increased height */
+    max-width: 600px;        /* Increased width */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 20px auto;       /* More vertical space */
+    object-fit: contain;
+    border: 5px solid #d9427a;  /* Pink-ish border */
+    border-radius: 15px;         /* Rounded corners */
+    padding: 10px;               /* Space between image and border */
+    box-shadow: 0 4px 10px rgba(217, 66, 122, 0.3); /* Soft shadow for depth */
+  "
+/>
+
+
+  <div class="marquee-container" aria-label="Welcome message" style="
+  background-color: #fce4ec; 
+  border: 2px solid #d9427a; 
+  border-radius: 12px; 
+  padding: 12px 20px; 
+  max-width: 800px; 
+  margin: 20px auto; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: #880e4f; 
+  font-size: 22px; 
+  font-weight: 600; 
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(217, 66, 122, 0.3);
+">
+  Welcome to Shyam Bakers – Where Every Bite is a Sweet Memory! 🍰
+</div>
+
+
+  <nav style="text-align: center; margin: 30px 0;">
+  <A HREF=""><button type="button" style="
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 28px;
+    margin: 0 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 126, 179, 0.4);
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  " onmouseover="this.style.background='linear-gradient(135deg, #ff4b6e 0%, #ff6a92 100%)'; this.style.boxShadow='0 8px 20px rgba(255, 74, 110, 0.6)';" onmouseout="this.style.background='linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%)'; this.style.boxShadow='0 6px 15px rgba(255, 126, 179, 0.4)';">
+    Home
+  </button></A>
+  
+  <A HREF="C:\Users\comp 7\Desktop\SUMIT\ABOUTO.HTML"><button type="button" style="
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 28px;
+    margin: 0 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 126, 179, 0.4);
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  " onmouseover="this.style.background='linear-gradient(135deg, #ff4b6e 0%, #ff6a92 100%)'; this.style.boxShadow='0 8px 20px rgba(255, 74, 110, 0.6)';" onmouseout="this.style.background='linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%)'; this.style.boxShadow='0 6px 15px rgba(255, 126, 179, 0.4)';">
+    About Us
+  </button></A>
+  
+   <A HREF="C:\Users\comp 7\Desktop\SUMIT\MENU.HTML"><button type="button" style="
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 28px;
+    margin: 0 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 126, 179, 0.4);
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  " onmouseover="this.style.background='linear-gradient(135deg, #ff4b6e 0%, #ff6a92 100%)'; this.style.boxShadow='0 8px 20px rgba(255, 74, 110, 0.6)';" onmouseout="this.style.background='linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%)'; this.style.boxShadow='0 6px 15px rgba(255, 126, 179, 0.4)';">
+    Menu
+  </button></A>
+  
+  <A HREF="C:\Users\comp 7\Desktop\SUMIT\GALL.HTML"><button type="button" style="
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 28px;
+    margin: 0 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 126, 179, 0.4);
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  " onmouseover="this.style.background='linear-gradient(135deg, #ff4b6e 0%, #ff6a92 100%)'; this.style.boxShadow='0 8px 20px rgba(255, 74, 110, 0.6)';" onmouseout="this.style.background='linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%)'; this.style.boxShadow='0 6px 15px rgba(255, 126, 179, 0.4)';">
+    Gallery
+  </button></A>
+  
+  <button type="button" style="
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 28px;
+    margin: 0 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 126, 179, 0.4);
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  " onmouseover="this.style.background='linear-gradient(135deg, #ff4b6e 0%, #ff6a92 100%)'; this.style.boxShadow='0 8px 20px rgba(255, 74, 110, 0.6)';" onmouseout="this.style.background='linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%)'; this.style.boxShadow='0 6px 15px rgba(255, 126, 179, 0.4)';">
+    Contact
+  </button>
+</nav>
+
+
+  <main style="
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background: #fff0f6;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(217, 66, 122, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #5a2a47;
+  line-height: 1.6;
+  border: 3px dashed #d97b9e;
+">
+
+  <h1 style="font-size: 3rem; margin-bottom: 10px; text-align: center; font-weight: 700; letter-spacing: 4px;">
+    Shyam Bakers
+  </h1>
+  
+  <h2 style="font-size: 1.8rem; margin-bottom: 25px; font-style: italic; text-align: center; color: #b85c7a;">
+    Delightfully sweet treats made just for you!
+  </h2>
+  
+  <p style="font-size: 1.1rem; margin-bottom: 20px;">
+    At Shyam Bakers, we believe every bite should be a little celebration. From freshly baked cakes to irresistible pastries, each creation is crafted with love and the finest ingredients. Whether you're planning a special occasion or just craving a sweet indulgence, our bakery is your cozy corner for all things delicious and delightful.
+  </p>
+
+  <p style="font-size: 1.1rem; margin-bottom: 20px;">
+    Our passion for baking goes beyond just taste – it’s about creating memories. Each treat is baked fresh daily, combining traditional recipes with innovative flavors to surprise your palate. We’re committed to quality, freshness, and that magical feeling that only a perfect dessert can bring.
+  </p>
+
+  <p style="font-size: 1.1rem; margin-bottom: 20px;">
+    Come visit Shyam Bakers and experience a warm atmosphere, friendly smiles, and a tempting display of sweets that will brighten your day. Whether it’s a birthday cake, a gift box, or just a treat for yourself, we have something special waiting for you!
+  </p>
+
+</main>
+
+
+    <table style="width: 100%; border-collapse: collapse; table-layout: fixed; text-align: center;">
+  <tr>
+    <td style="padding: 12px;">
+      <figure style="margin: 0;">
+        <img src="C:\Users\comp 7\Desktop\SUMIT\CAKE 1.JPG" alt="Cupcakes" style="width: 100%; height: auto; border-radius: 12px; object-fit: cover;" />
+        <figcaption style="margin-top: 8px; font-weight: 600; color: #b85c7a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          Delicious Cupcakes
+        </figcaption>
+      </figure>
+    </td>
+    <td style="padding: 12px;">
+      <figure style="margin: 0;">
+        <img src="C:\Users\comp 7\Desktop\SUMIT\CUP.JPG" alt="Cakes" style="width: 95%; height: auto; border-radius: 12px; object-fit: cover;" />
+        <figcaption style="margin-top: 8px; font-weight: 600; color: #b85c7a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          Classic Cakes
+        </figcaption>
+      </figure>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 12px;">
+      <figure style="margin: 0;">
+        <img src="C:\Users\comp 7\Desktop\SUMIT\PASTRY.JPG" alt="Pastries" style="width: 100%; height: auto; border-radius: 12px; object-fit: cover;" />
+        <figcaption style="margin-top: 8px; font-weight: 600; color: #b85c7a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          Tasty Pastries
+        </figcaption>
+      </figure>
+    </td>
+    <td style="padding: 12px;">
+      <figure style="margin: 0;">
+        <img src="C:\Users\comp 7\Desktop\SUMIT\DESRT.JPG" alt="Desserts" style="width: 100%; height: auto; border-radius: 12px; object-fit: cover;" />
+        <figcaption style="margin-top: 8px; font-weight: 600; color: #b85c7a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          Sweet Desserts
+        </figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
+
+
+  <footer>
+    &copy; 2025 Shyam Bakers | Made with ❤️ for sweet moments
+  </footer>
+
+</body>
+</html>

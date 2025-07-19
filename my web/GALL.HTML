@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery | Shyam Bakers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f9;
+      color: #5a2a47;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f8d4e4;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(217, 66, 122, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #880e4f;
+    }
+
+    nav {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    nav button {
+      background-color: #d9427a;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      margin: 0 8px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: #a62c5c;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff0f6;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(217, 66, 122, 0.1);
+    }
+
+    main h2 {
+      text-align: center;
+      color: #b85c7a;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery-item {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(217, 66, 122, 0.15);
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: #d9427a;
+    }
+
+    footer {
+      background-color: #f8d4e4;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      color: #5a2a47;
+      border-top: 2px dashed #d97b9e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shyam Bakers</h1>
+    
+  </header>
+
+  <main>
+    <h2>Our Delicious Creations Gallery</h2>
+<!-- Gallery Section -->
+<section class="gallery-only-images">
+  <div class="gallery-grid">
+    <img src="C:\Users\comp 7\Desktop\SUMIT\44.JPG" onclick="openLightbox(this.src)" />
+    <img src="C:\Users\comp 7\Desktop\SUMIT\46.JPG" onclick="openLightbox(this.src)" />
+    <img src="C:\Users\comp 7\Desktop\SUMIT\47.JPG" onclick="openLightbox(this.src)" />
+    <img src="C:\Users\comp 7\Desktop\SUMIT\48.JPG" onclick="openLightbox(this.src)" />
+    <img src="C:\Users\comp 7\Desktop\SUMIT\49.JPG" onclick="openLightbox(this.src)" />
+    <img src="C:\Users\comp 7\Desktop\SUMIT\50.JPG" onclick="openLightbox(this.src)" />
+    <img src="C:\Users\comp 7\Desktop\SUMIT\51.JPG" onclick="openLightbox(this.src)" />
+    <img src="C:\Users\comp 7\Desktop\SUMIT\52.JPG" onclick="openLightbox(this.src)" />
+    <img src="C:\Users\comp 7\Desktop\SUMIT\53.JPG" onclick="openLightbox(this.src)" />
+  </div>
+</section>
+
+<!-- Lightbox Popup -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" />
+</div>
+
+<!-- Styles -->
+<style>
+  .gallery-only-images {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(217, 66, 122, 0.15);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+
+
+  <footer>
+    📞 +91-77430-15262 | 📧 shyambakers@gmail.com <br />
+    Follow us: 
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+  </footer>
+
+</body>
+</html>
